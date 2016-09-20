@@ -144,6 +144,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import org.paxtended.paxtweaks.PartsFragment;
+
 public class SettingsActivity extends SettingsDrawerActivity
         implements PreferenceManager.OnPreferenceTreeClickListener,
         PreferenceFragment.OnPreferenceStartFragmentCallback,
@@ -260,6 +262,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.SimSettingsActivity.class.getName(),
             Settings.Lte4GEnableActivity.class.getName(),
             Settings.WirelessSettingsActivity.class.getName(),
+	    // PAXtweaks
+	    PartsFragment.class.getName(),
             //device_section
             Settings.ButtonsSettingsActivity.class.getName(),
             Settings.GesturesSettingsActivity.class.getName(),
@@ -387,7 +391,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             ButtonsSettings.class.getName(),
-            GesturesSettings.class.getName()
+            GesturesSettings.class.getName(),
+	    PartsFragment.class.getName()
     };
 
     private static final String[] LIKE_SHORTCUT_INTENT_ACTION_ARRAY = {
